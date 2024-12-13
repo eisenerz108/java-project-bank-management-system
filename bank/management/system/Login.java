@@ -26,6 +26,45 @@ public class Login extends JFrame {
         text.setBounds(200, 40, 400, 40);
         add(text);
 
+        JLabel cardNo = new JLabel("Card Number");
+        cardNo.setFont(new Font("Raleway", Font.BOLD, 20));
+        cardNo.setBounds(120, 140, 150, 40);
+        add(cardNo);
+
+        JTextField cardTextField = new JTextField();
+        cardTextField.setBounds(300, 140, 230, 40);
+        add(cardTextField);
+
+        JLabel pin = new JLabel("PIN");
+        pin.setFont(new Font("Raleway", Font.BOLD, 20));
+        pin.setBounds(120, 240, 400, 40);
+        add(pin);
+
+        JTextField pinTextField = new JTextField();
+        pinTextField.setBounds(300, 240, 230, 40);
+        add(pinTextField);
+
+        //Buttons
+
+        JButton login = new JButton("SIGN IN");
+        login.setBounds(300, 300, 100, 30);
+        login.setBackground(Color.BLACK);
+        login.setForeground(Color.WHITE);
+        add(login);
+
+        JButton clear = new JButton("CLEAR");
+        clear.setBounds(430, 300, 100, 30);
+        clear.setBackground(Color.BLACK);
+        clear.setForeground(Color.WHITE);
+        add(clear);
+
+        JButton signup = new JButton("SIGN UP");
+        signup.setBounds(300, 350, 230, 30);
+        signup.setBackground(Color.BLACK);
+        signup.setForeground(Color.WHITE);
+        add(signup);
+
+
         getContentPane().setBackground(Color.WHITE);
 
         setSize(800, 480);
