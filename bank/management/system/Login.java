@@ -9,7 +9,8 @@ public class Login extends JFrame implements ActionListener {
     JButton login;
     JButton clear;
     JButton signup;
-    JTextField cardTextField, pinTextField;
+    JTextField cardTextField;
+    JPasswordField pinTextField;
 
     Login() {
         setTitle("AUTOMATED TELLER MACHINE");
@@ -46,7 +47,7 @@ public class Login extends JFrame implements ActionListener {
         pin.setBounds(120, 240, 400, 40);
         add(pin);
 
-        pinTextField = new JTextField();
+        pinTextField = new JPasswordField();
         pinTextField.setBounds(300, 240, 230, 40);
         add(pinTextField);
 
