@@ -2,8 +2,10 @@ package bank.management.system;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Login extends JFrame {
+public class Login extends JFrame implements ActionListener {
 
     Login() {
         setTitle("AUTOMATED TELLER MACHINE");
@@ -50,18 +52,21 @@ public class Login extends JFrame {
         login.setBounds(300, 300, 100, 30);
         login.setBackground(Color.BLACK);
         login.setForeground(Color.WHITE);
+        login.addActionListener(this);
         add(login);
 
         JButton clear = new JButton("CLEAR");
         clear.setBounds(430, 300, 100, 30);
         clear.setBackground(Color.BLACK);
         clear.setForeground(Color.WHITE);
+        login.addActionListener(this);
         add(clear);
 
         JButton signup = new JButton("SIGN UP");
         signup.setBounds(300, 350, 230, 30);
         signup.setBackground(Color.BLACK);
         signup.setForeground(Color.WHITE);
+        login.addActionListener(this);
         add(signup);
 
 
@@ -73,7 +78,13 @@ public class Login extends JFrame {
         setLocation(350, 200);
     }
 
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
+    }
+
     public static void main(String[] args) {
         new Login();
     }
+
 }
