@@ -1,8 +1,10 @@
 package bank.management.system;
 
+import com.toedter.calendar.JDateChooser;
+
 import javax.swing.*;
 import java.awt.*;
-import java.util.*;
+import java.util.Random;
 public class SignupOne extends JFrame {
 
     SignupOne() {
@@ -118,12 +120,33 @@ public class SignupOne extends JFrame {
 
         JTextField emailTextField = new JTextField();
         emailTextField.setFont(new Font("Raleway", Font.BOLD, 14));
-        emailTextField.setBounds(300,240, 300, 30);
+        emailTextField.setBounds(300,340, 300, 30);
         add(emailTextField);
 
         JTextField addressTextField = new JTextField();
         addressTextField.setFont(new Font("Raleway", Font.BOLD, 14));
-        addressTextField.setBounds(300,290, 300, 30);
+        addressTextField.setBounds(300,440, 300, 30);
         add(addressTextField);
+
+        JTextField stateTextField = new JTextField();
+        stateTextField.setFont(new Font("Raleway", Font.BOLD, 14));
+        stateTextField.setBounds(300,540, 300, 30);
+        add(stateTextField);
+
+        JTextField cityTextField = new JTextField();
+        cityTextField.setFont(new Font("Raleway", Font.BOLD, 14));
+        cityTextField.setBounds(300,490, 300, 30);
+        add(cityTextField);
+
+        JTextField pinTextField = new JTextField();
+        pinTextField.setFont(new Font("Raleway", Font.BOLD, 14));
+        pinTextField.setBounds(300,590, 300, 30);
+        add(pinTextField);
+    }
+
+    public void createCalendar() {
+       JDateChooser jDateChooser = new JDateChooser();
+
+
     }
 }
